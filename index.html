@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hype Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation & Cart -->
+    <header>
+        <div class="logo">👟 HypeKicks</div>
+        <div class="cart-info">
+            🛒 Cart: <span id="cart-count">0</span> items
+            <button onclick="clearCart()" class="clear-btn">Clear</button>
+        </div>
+    </header>
+
+    <!-- Store Grid -->
+    <main>
+        <h2 style="text-align: center; margin-top: 20px;">Trending Now</h2>
+        <div id="store-grid" class="grid-container">
+            <!-- JavaScript will load the shoes here -->
+        </div>
+    </main>
+
+    <!-- Chatbot Section -->
+    <div id="chatbot-container">
+        <div id="chat-header" onclick="toggleChat()">💬 Shoe Expert Bot</div>
+        <div id="chat-body" style="display: none;">
+            <div id="chat-messages">
+                <p><strong>Bot:</strong> Yo! Need help finding your size or style?</p>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about 'shipping' or 'sizes'..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
